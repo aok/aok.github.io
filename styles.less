@@ -1,0 +1,47 @@
+@greyish-blue: #2A719E;
+
+body{
+	font-family: Nobile;
+	font-size: 16px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+.caption{
+	font-style: italic;
+	text-align: center;
+}
+.heading-typeface {
+	color: @greyish-blue;
+	font-family: Bevan;
+}
+#title{
+	.heading-typeface;
+	h1 {
+		font-size: 6em;
+		margin: -0.5em;
+	}
+	margin-bottom: 60px;
+}
+
+@colw: 240px;
+@colg:  20px;
+.multicol {
+	-webkit-column-width: @colw;
+	-webkit-column-gap: @colg;
+	-moz-column-width: @colw;
+	-moz-column-gap: @colg;
+	column-width: @colw;
+	column-gap: @colg;
+	margin: 0 auto;
+}
+.dropcap {
+	.heading-typeface;
+	display: inline;
+	float: left;
+	font-size: 6em;
+	margin: -0.25em 0.1em -0.5em 0;
+	text-transform: capitalize;
+}
+.ingress {
+	font-weight: bold;
+}
